@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="hi">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shree Ramjee Digital Seva Kendra</title>
-
-<style>
-
+<title>Shree Ramjee Digital Seva Kendra</title><style>
 *{
 margin:0;
 padding:0;
@@ -19,84 +15,91 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#f4f4f4;
+background:#f5f7fb;
 }
 
 header{
-background:#003366;
+background:linear-gradient(135deg,#003366,#0056b3);
 color:white;
 text-align:center;
 padding:40px 20px;
 }
 
 header h1{
-font-size:45px;
+font-size:42px;
 margin-bottom:10px;
 }
 
 header p{
-font-size:20px;
-margin:5px;
+margin:5px 0;
+font-size:18px;
 }
 
 nav{
-background:#0056b3;
+background:#004080;
 display:flex;
 justify-content:center;
 flex-wrap:wrap;
 position:sticky;
 top:0;
+z-index:999;
 }
 
 nav a{
 color:white;
 text-decoration:none;
 padding:15px 25px;
-font-size:18px;
 font-weight:bold;
 }
 
 nav a:hover{
-background:#003366;
+background:#00264d;
 }
 
 .hero{
-background:white;
 text-align:center;
-padding:70px 20px;
+padding:60px 20px;
+background:white;
 }
 
 .hero h2{
-font-size:50px;
-margin-bottom:20px;
+font-size:40px;
+margin-bottom:15px;
+color:#003366;
 }
 
 .hero p{
-font-size:22px;
-margin-bottom:30px;
+font-size:20px;
+margin-bottom:25px;
 }
 
 .btn{
-background:green;
-color:white;
-padding:15px 35px;
+display:inline-block;
+padding:12px 25px;
+margin:5px;
+border-radius:8px;
 text-decoration:none;
-border-radius:10px;
-font-size:20px;
+color:white;
+font-weight:bold;
 }
 
-.btn:hover{
-background:#006400;
+.call-btn{
+background:#28a745;
+}
+
+.mail-btn{
+background:#007bff;
 }
 
 section{
 padding:60px 20px;
 }
 
-.title{
+.section-title{
 text-align:center;
-font-size:40px;
-margin-bottom:40px;
+font-size:36px;
+margin-bottom:30px;
+color:#003366;
 }
 
 .services{
@@ -109,23 +112,36 @@ margin:auto;
 
 .card{
 background:white;
-padding:25px;
+padding:20px;
 border-radius:15px;
-box-shadow:0 0 10px rgba(0,0,0,0.15);
+box-shadow:0 0 10px rgba(0,0,0,.1);
 text-align:center;
-font-size:22px;
 font-weight:bold;
+font-size:18px;
 }
 
-.contact-box{
-background:white;
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+max-width:1200px;
+margin:auto;
+}
+
+.gallery img{
+width:100%;
+border-radius:15px;
+box-shadow:0 0 10px rgba(0,0,0,.15);
+}
+
+.contact{
 max-width:800px;
 margin:auto;
+background:white;
 padding:30px;
 border-radius:15px;
-box-shadow:0 0 10px rgba(0,0,0,0.15);
+box-shadow:0 0 10px rgba(0,0,0,.1);
 line-height:2;
-font-size:20px;
 }
 
 footer{
@@ -140,131 +156,52 @@ position:fixed;
 right:20px;
 bottom:20px;
 background:#25D366;
-color:white;
-font-size:30px;
 width:65px;
 height:65px;
 border-radius:50%;
 text-align:center;
 line-height:65px;
+font-size:30px;
+color:white;
 text-decoration:none;
 }
-
-</style>
-</head>
-
-<body>
-
-<header>
-
+</style></head><body><header>
 <h1>Shree Ramjee Digital Seva Kendra</h1>
-
 <p>CSC ID : 523231210016</p>
-
 <p>VLE : Karan Kumar</p>
-
-</header>
-
-<nav>
+</header><nav>
 <a href="#home">Home</a>
 <a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
-</nav>
-
-<section id="home" class="hero">
-
+</nav><section id="home" class="hero">
 <h2>आपकी सेवा, आपके द्वार</h2>
+<p>सभी प्रकार की ऑनलाइन सेवाएं एक ही स्थान पर</p><a href="tel:8603899508" class="btn call-btn">📞 Call Now</a>
+<a href="mailto:karankumar35693@gmail.com" class="btn mail-btn">✉ Email Us</a>
 
-<p>सभी प्रकार की ऑनलाइन सेवाएं एक ही स्थान पर</p>
-
-<a href="tel:9523001404" class="btn">📞 Call Now</a>
-
-</section>
-
-<section id="services">
-
-<h2 class="title">हमारी सेवाएं</h2>
-
-<div class="services">
-
-<div class="card">🪪 Aadhaar Services</div>
-
+</section><section id="services"><h2 class="section-title">Our Services</h2><div class="services"><div class="card">🪪 Aadhaar Services</div>
 <div class="card">💳 PAN Card Services</div>
-
-<div class="card">🚆 IRCTC Ticket Booking</div>
-
-<div class="card">🏥 Ayushman Card</div>
-
-<div class="card">🏦 AEPS Banking</div>
-
 <div class="card">🍚 Ration Card Services</div>
-
 <div class="card">📜 Income Certificate</div>
-
 <div class="card">📜 Caste Certificate</div>
-
 <div class="card">🏠 Residence Certificate</div>
-
-<div class="card">📄 Non Creamy Layer (NCL)</div>
-
+<div class="card">📄 NCL Certificate</div>
 <div class="card">👶 Birth Certificate</div>
-
 <div class="card">⚰️ Death Certificate</div>
-
-<div class="card">🎓 Scholarship Form</div>
-
-<div class="card">📄 Online Form Filling</div>
-
-<div class="card">🖨️ Print & Scan Services</div>
-
-<div class="card">💡 Electricity Bill Payment</div>
-
+<div class="card">🏥 Ayushman Card</div>
+<div class="card">🚆 IRCTC Ticket Booking</div>
+<div class="card">🏦 AEPS Banking</div>
+<div class="card">🎓 Scholarship Services</div>
 <div class="card">📱 Mobile Recharge</div>
-
-<div class="card">💰 Money Transfer</div>
-
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2 class="title">Contact Us</h2>
-
-<div class="contact-box">
-
-<p><b>Centre Name:</b> Shree Ramjee Digital Seva Kendra</p>
-
-<p><b>VLE Name:</b> Karan Kumar</p>
-
-<p><b>CSC ID:</b> 523231210016</p>
-
-<p><b>Mobile:</b> 9523001404</p>
-
-<p><b>Email:</b> karankumar35693@gmail.com</p>
-
-<p><b>Address:</b><br>
-Nagar Parishad Laxmipur Ward 26,<br>
+<div class="card">💡 Electricity Bill Payment</div>
+<div class="card">🖨 Print & Scan Services</div></div></section><section id="gallery"><h2 class="section-title">Our Gallery</h2><div class="gallery"><img src="images/shop1.jpg" alt="Shop Photo 1"><img src="images/shop2.jpg" alt="Shop Photo 2"><img src="images/banner.jpg" alt="CSC Banner"></div></section><section id="contact"><h2 class="section-title">Contact Us</h2><div class="contact"><p><b>Centre Name:</b> Shree Ramjee Digital Seva Kendra</p><p><b>VLE Name:</b> Karan Kumar</p><p><b>CSC ID:</b> 523231210016</p><p><b>Mobile:</b> 8603899508</p><p><b>WhatsApp:</b> 9523001404</p><p><b>Email:</b> karankumar35693@gmail.com</p><p><b>Address:</b><br>
+Nagar Parishad Laxmipur Ward No. 26,<br>
 Near High School Laxmipur,<br>
-Uda Kishunganj, Madhepura,<br>
+Udakishunganj, Madhepura,<br>
 Bihar - 852220
-</p>
-
-<p>
-<a href="mailto:karankumar35693@gmail.com" class="btn">✉️ Send Email</a>
-</p>
-
-</div>
-
-</section>
-
-<footer>
-
+</p></div></section><footer>
 © 2026 Shree Ramjee Digital Seva Kendra | All Rights Reserved
-
-</footer>
-
-<a class="whatsapp" href="https://wa.me/919523001404">💬</a>
+</footer><a class="whatsapp" href="https://wa.me/919523001404">💬</a>
 
 </body>
 </html>
